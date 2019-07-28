@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FilmesFamosos</string>
+    <string name="popular">Filmes populares</string>
+    <string name="mais_votados">Filmes mais votados</string>
+    <string name="favoritos">Filmes favoritos</string>
+    <string name="detalhe">Detalhe do filme</string>
+    <string name="lista_vazio">Sem dados para exibir</string>
+    <string name="titulo">Titulo:</string>
+    <string name="lancamento">Lancamento:</string>
+    <string name="votos">votos</string>
+    <string name="resumo">Sinopse</string>
+    <string name="trailer">Trailer</string>
+    <string name="autor">Escrito por</string>
+    <string name="trailer_vazio">Sem trailer para exibir</string>
+    <string name="comentario_vazio">Sem comentario para exibir</string>
+</resources>

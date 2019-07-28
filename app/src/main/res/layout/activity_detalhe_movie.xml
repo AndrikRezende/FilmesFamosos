@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.filmesfamosos.DetalheMovieActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/detalhe_titulo"
+            android:textSize="@dimen/text_grande"
+            android:layout_weight="3"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/detalhe_favorito"
+            android:src="@drawable/ic_outline_grade_24px"
+            android:layout_weight="1"
+            android:onClick="alterarEstadoFavorito"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/detalhe_votos"
+            android:textSize="@dimen/text_pequeno"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/detalhe_data"
+            android:textSize="@dimen/text_pequeno"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/detalhe_imagem"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/detalhe_sinopse"
+            android:textSize="@dimen/text_pequeno"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding"
+            android:paddingRight="@dimen/padding"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detalhe_review"
+                android:textSize="@dimen/text_pequeno"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"/>
+        </ScrollView>
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/detalhe_trailer">
+            </RadioGroup>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
